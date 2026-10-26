@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI poem Genearotor</title>
+    <title>AI Poem Genearotor</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
+  <div class="container">
     <header>
        <h1>
-           AI poem Genearotor
+           AI Poem Genearotor
        </h1>
     </header>
 
@@ -20,10 +21,13 @@
              type="text" 
              placeholder="Enter the topic of the poem"
              autofocus
-             required/>
-            <input type="submit" value="Submit">
+             required
+             autocomplete="off"
+             class="instruction"
+             />
+            <input type="submit" class="button"/>
         </form>
-        <div>
+        <div class="poem">
             The poem will go here
             <br/>
             The poem will go here
@@ -36,6 +40,7 @@
          <a href="https://github.com/fagbenlefunmi-bit/Poem-generator" target="_blank">Github</a>
          and is hosted on <a href="https://funmi-poem-generator.netlify.app">Netlify</a>
     </footer>
+    </div>
     <script src="src/index.js"></script>
 
 </body>
