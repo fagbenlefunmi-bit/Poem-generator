@@ -15,7 +15,7 @@ function generatePoem(event) {
 
   let apiKey = "o5t6f56b82d0fb3f07f494e803db14aa";
   let prompt =`Write a poem about ${instructionInput.value}`;
-  let context ="please provide a clear and precise answer";
+  let context ="please write a precise poem based on the users request. And seperate each line with a <br/> and sign the poem with'SheCodes AI' inside a <strong> element";
   let apiUrl =
   `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
