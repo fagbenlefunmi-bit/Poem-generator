@@ -23,12 +23,20 @@ main{
   margin-bottom: 25px;
 }
 form{
+  display: flex;
+}
+.form-wrap{
   padding: 30px;
   background-color: white;
   box-shadow: 0px 20px 60px rgba(39, 25, 87, 0.6);
   border-radius: 12px;
-  display: flex;
   margin-bottom: 25px;
+}
+.idea{
+  line-height: 1.5;
+  margin-top: 5px;
+  font-size: 15px;
+  opacity: 0.6;
 }
 .instruction{
   padding: 15px;
@@ -64,4 +72,27 @@ footer{
   text-align: center;
   font-size: 15px;
   margin-top: 30px;
+}
+.text {
+  animation: blink 1.5s linear infinite;
+}
+/*
+Source - https://stackoverflow.com/a/16012979
+Posted by Neil, modified by community. See post 'Timeline' for change history
+Retrieved 2026-10-30, License - CC BY-SA 3.0
+*/
+
+.text {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
